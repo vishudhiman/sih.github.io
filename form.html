@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SUBMIT FORM</title>
+<script type="text/javascript">
+function submit()
+{
+  return true
+}
+
+</script>
+<style>
+  body{
+    background-color:white;
+  }
+  .fake{
+    text-align:center;
+    background-color:#7bb0b0; 
+
+  }
+  #button{
+  text-align:center;
+  color: blue;
+
+}
+input #button{
+  background-color:  #e6ffff;
+  font-weight:bold;
+  border:1px solid black;
+  text-align: center; 
+}
+#button:hover{
+  background-color:#e6ffff;
+}
+  :empty{
+  height:40px;
+  background:white;
+  -moz-border-radius:5%;
+    border-radius:5%;
+}
+:root{
+  border-radius: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: auto;
+  border:10px solid black;
+  margin:100px auto;
+  padding:30px;
+  background-image:url(bbb.jpg);
+  width:550px;
+  text-align: center;
+  -moz-border-radius:50%;
+}
+</style>
+
+  <title>COMPLAINT REGISTRATION FORM.</title>
+</head>
+<body>
+ <form onsubmit="return submit()" action="website1.html">
+  <h2><b>FILL THIS FORM TO REGISTER YOUR COMPLAINT.</b></h2> 
+  <table>
+   <tr>
+    <td><b>NAME :</b></td>
+    <td><input type="text" name="Username" required ></td>
+   </tr>
+   <tr>
+    <td><b>PASSWORD :</b></td>
+    <td><input type="password" name="Password" required></td>
+   </tr>
+   <tr>
+    <td><b>GENDER :</b></td>
+    <td>
+     <input type="radio" name="Gender" value="m" required>Male
+     <input type="radio" name="Gender" value="f" required>Female
+    </td>
+   </tr>
+   <tr>
+    <td><b>E-MAIL :</b></td>
+    <td><input type="email" name="Email" required></td>
+   </tr> 
+   <tr>
+    <td><b>PHONE NO :</b></td>
+    <td>
+     <select name="PhoneCode" required>
+      <option selected hidden value="select code">Select Code</option>
+      <option value="+91">+91</option>
+      <option value="+92">+92</option>
+      <option value="+97">+97</option>
+     </select>
+     <input type="tel" name="Phone" required>
+    </td>
+   </tr>
+    <tr>
+   <td><b>ADDRESS:</b></td>
+    <td><input type="text" name="Address" required></td>
+   </tr>
+    <tr>
+   <td><b>COMPLAINT FOR WHAT:</b></td>
+    <td><input type="text" name="Your complaint" required></td>
+   </tr>
+    <tr>
+   <td><b>PLACE:</b></td>
+    <td><input type="text" name="Place" required></td>
+   </tr>
+    <tr>
+   <td><b>DATE :</b></td>
+    <td><input type="date" name="Date  " required></td>
+   </tr>
+    <tr>
+    	<td><b>TIME :</b></td>
+    <td><input type="time" name="Time " required></td>
+   </tr>
+   <tr>
+    <td><input type="submit" name="feedback[action]" value="SUBMIT" onclick="submit()" id="button"/>
+   </tr>
+  </table>
+ </form>
+</body>
+</html>
