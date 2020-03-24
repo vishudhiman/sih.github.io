@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LOGIN </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="login.css">
+<script type="text/javascript">
+function log()
+{
+  return true
+}
+function cancel()
+{
+  return true
+}
+
+
+
+</script>
+</head>
+<body>
+
+<h2>Login Form </h2>
+
+<form onsubmit="return log()" action="website1.html" method="get">
+  <div class="imgcontainer">
+    <img src="login image.jpg" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button onclick="log()" type="submit"><U>Login</U></button>
+    
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+  </div>
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn"><a href="website.html" style="color: antiquewhite;"><b>Cancel</b></a></button>
+    <span class="psw">Forgot <a href="forgot.html">password?</a></span>
+  </div>
+</form>
+
+
+</body>
+</html>
